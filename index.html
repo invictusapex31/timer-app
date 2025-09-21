@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Alarm Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer-container">
+    <h1 id="timer">00:05:00</h1>
+
+    <div class="controls">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Restart</button>
+    </div>
+
+    <div class="set-time">
+      <input type="number" id="hoursInput" placeholder="Hours" min="0">
+      <input type="number" id="minutesInput" placeholder="Minutes" min="0">
+      <button onclick="setCustomTime()">Set</button>
+    </div>
+  </div>
+
+  <!-- Alarm Sound -->
+  <audio id="alarm-sound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

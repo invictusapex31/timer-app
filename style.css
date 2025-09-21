@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.timer-container {
+  text-align: center;
+}
+
+#timer {
+  font-size: 15vw; /* responsive size according to screen width */
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.controls {
+  margin-top: 15px;
+}
+
+button {
+  background: #333; /* subtle gray */
+  color: #fff;
+  border: 1px solid #555;
+  padding: 5px 12px; /* smaller buttons */
+  margin: 3px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #555;
+  border-color: #fff;
+}
+
+.set-time {
+  margin-top: 20px;
+}
+
+#set-time input, .set-time button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#set-time input:hover, .set-time button:hover {
+  border-color: #fff;
+}
